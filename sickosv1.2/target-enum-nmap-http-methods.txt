@@ -1,0 +1,15 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-01-11 18:39 IST
+Nmap scan report for 192.168.102.126
+Host is up (0.00052s latency).
+
+PORT   STATE SERVICE VERSION
+80/tcp open  http    lighttpd 1.4.28
+| http-methods: 
+|   Supported Methods: PROPFIND DELETE MKCOL PUT MOVE COPY PROPPATCH LOCK UNLOCK GET HEAD POST OPTIONS
+|   Potentially risky methods: PROPFIND DELETE MKCOL PUT MOVE COPY PROPPATCH LOCK UNLOCK
+|_  Path tested: /test
+|_http-server-header: lighttpd/1.4.28
+MAC Address: 00:0C:29:E4:F0:75 (VMware)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 6.88 seconds

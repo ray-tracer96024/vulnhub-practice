@@ -1,0 +1,83 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-01-11 18:22 IST
+Nmap scan report for 192.168.102.126
+Host is up (0.00097s latency).
+Not shown: 65533 filtered tcp ports (no-response)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 5.9p1 Debian 5ubuntu1.8 (Ubuntu Linux; protocol 2.0)
+| vulners: 
+|   cpe:/a:openbsd:openssh:5.9p1: 
+|     	SSV:60656	5.0	https://vulners.com/seebug/SSV:60656	*EXPLOIT*
+|     	CVE-2018-15919	5.0	https://vulners.com/cve/CVE-2018-15919
+|     	CVE-2017-15906	5.0	https://vulners.com/cve/CVE-2017-15906
+|     	CVE-2010-5107	5.0	https://vulners.com/cve/CVE-2010-5107
+|     	SSV:90447	4.6	https://vulners.com/seebug/SSV:90447	*EXPLOIT*
+|     	CVE-2016-0778	4.6	https://vulners.com/cve/CVE-2016-0778
+|     	MSF:ILITIES/OPENBSD-OPENSSH-CVE-2020-14145/	4.3	https://vulners.com/metasploit/MSF:ILITIES/OPENBSD-OPENSSH-CVE-2020-14145/	*EXPLOIT*
+|     	MSF:ILITIES/HUAWEI-EULEROS-2_0_SP9-CVE-2020-14145/	4.3	https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP9-CVE-2020-14145/	*EXPLOIT*
+|     	MSF:ILITIES/HUAWEI-EULEROS-2_0_SP8-CVE-2020-14145/	4.3	https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP8-CVE-2020-14145/	*EXPLOIT*
+|     	MSF:ILITIES/HUAWEI-EULEROS-2_0_SP5-CVE-2020-14145/	4.3	https://vulners.com/metasploit/MSF:ILITIES/HUAWEI-EULEROS-2_0_SP5-CVE-2020-14145/	*EXPLOIT*
+|     	MSF:ILITIES/F5-BIG-IP-CVE-2020-14145/	4.3	https://vulners.com/metasploit/MSF:ILITIES/F5-BIG-IP-CVE-2020-14145/	*EXPLOIT*
+|     	CVE-2020-14145	4.3	https://vulners.com/cve/CVE-2020-14145
+|     	MSF:ILITIES/UBUNTU-CVE-2016-0777/	4.0	https://vulners.com/metasploit/MSF:ILITIES/UBUNTU-CVE-2016-0777/	*EXPLOIT*
+|     	MSF:ILITIES/IBM-AIX-CVE-2016-0777/	4.0	https://vulners.com/metasploit/MSF:ILITIES/IBM-AIX-CVE-2016-0777/	*EXPLOIT*
+|     	MSF:ILITIES/DEBIAN-CVE-2016-0777/	4.0	https://vulners.com/metasploit/MSF:ILITIES/DEBIAN-CVE-2016-0777/	*EXPLOIT*
+|     	MSF:ILITIES/AIX-7.2-OPENSSH_ADVISORY7_CVE-2016-0777/	4.0	https://vulners.com/metasploit/MSF:ILITIES/AIX-7.2-OPENSSH_ADVISORY7_CVE-2016-0777/	*EXPLOIT*
+|     	MSF:ILITIES/AIX-7.1-OPENSSH_ADVISORY7_CVE-2016-0777/	4.0	https://vulners.com/metasploit/MSF:ILITIES/AIX-7.1-OPENSSH_ADVISORY7_CVE-2016-0777/	*EXPLOIT*
+|     	MSF:ILITIES/AIX-5.3-OPENSSH_ADVISORY7_CVE-2016-0777/	4.0	https://vulners.com/metasploit/MSF:ILITIES/AIX-5.3-OPENSSH_ADVISORY7_CVE-2016-0777/	*EXPLOIT*
+|_    	CVE-2016-0777	4.0	https://vulners.com/cve/CVE-2016-0777
+80/tcp open  http    lighttpd 1.4.28
+| http-enum: 
+|_  /test/: Test page
+|_http-dombased-xss: Couldn't find any DOM based XSS.
+|_http-csrf: Couldn't find any CSRF vulnerabilities.
+|_http-server-header: lighttpd/1.4.28
+| http-slowloris-check: 
+|   VULNERABLE:
+|   Slowloris DOS attack
+|     State: LIKELY VULNERABLE
+|     IDs:  CVE:CVE-2007-6750
+|       Slowloris tries to keep many connections to the target web server open and hold
+|       them open as long as possible.  It accomplishes this by opening connections to
+|       the target web server and sending a partial request. By doing so, it starves
+|       the http server's resources causing Denial Of Service.
+|       
+|     Disclosure date: 2009-09-17
+|     References:
+|       https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2007-6750
+|_      http://ha.ckers.org/slowloris/
+|_http-stored-xss: Couldn't find any stored XSS vulnerabilities.
+|_http-vuln-cve2017-1001000: ERROR: Script execution failed (use -d to debug)
+| vulners: 
+|   cpe:/a:lighttpd:lighttpd:1.4.28: 
+|     	CVE-2013-4559	7.6	https://vulners.com/cve/CVE-2013-4559
+|     	SSV:61980	7.5	https://vulners.com/seebug/SSV:61980	*EXPLOIT*
+|     	CVE-2019-11072	7.5	https://vulners.com/cve/CVE-2019-11072
+|     	CVE-2014-2323	7.5	https://vulners.com/cve/CVE-2014-2323
+|     	SSV:72453	5.0	https://vulners.com/seebug/SSV:72453	*EXPLOIT*
+|     	SSV:61850	5.0	https://vulners.com/seebug/SSV:61850	*EXPLOIT*
+|     	SSV:30003	5.0	https://vulners.com/seebug/SSV:30003	*EXPLOIT*
+|     	SSV:26120	5.0	https://vulners.com/seebug/SSV:26120	*EXPLOIT*
+|     	SSV:24275	5.0	https://vulners.com/seebug/SSV:24275	*EXPLOIT*
+|     	EXPLOITPACK:184DA427E35F6E3E6D5AC9CCCC72148E	5.0	https://vulners.com/exploitpack/EXPLOITPACK:184DA427E35F6E3E6D5AC9CCCC72148E	*EXPLOIT*
+|     	EDB-ID:18295	5.0	https://vulners.com/exploitdb/EDB-ID:18295	*EXPLOIT*
+|     	CVE-2018-19052	5.0	https://vulners.com/cve/CVE-2018-19052
+|     	CVE-2015-3200	5.0	https://vulners.com/cve/CVE-2015-3200
+|     	CVE-2014-2324	5.0	https://vulners.com/cve/CVE-2014-2324
+|     	CVE-2013-4560	5.0	https://vulners.com/cve/CVE-2013-4560
+|     	CVE-2011-4362	5.0	https://vulners.com/cve/CVE-2011-4362
+|_    	CVE-2013-4508	4.3	https://vulners.com/cve/CVE-2013-4508
+MAC Address: 00:0C:29:E4:F0:75 (VMware)
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+Device type: general purpose
+Running: Linux 3.X|4.X
+OS CPE: cpe:/o:linux:linux_kernel:3 cpe:/o:linux:linux_kernel:4
+OS details: Linux 3.10 - 4.11, Linux 3.16 - 4.6, Linux 3.2 - 4.9, Linux 4.4
+Network Distance: 1 hop
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE
+HOP RTT     ADDRESS
+1   0.96 ms 192.168.102.126
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 144.34 seconds

@@ -1,0 +1,9 @@
+HTTP/1.1 301 Moved Permanently
+DAV: 1,2
+MS-Author-Via: DAV
+Allow: PROPFIND, DELETE, MKCOL, PUT, MOVE, COPY, PROPPATCH, LOCK, UNLOCK
+Location: http://192.168.102.126/test/
+Content-Length: 0
+Date: Tue, 11 Jan 2022 13:12:40 GMT
+Server: lighttpd/1.4.28
+
