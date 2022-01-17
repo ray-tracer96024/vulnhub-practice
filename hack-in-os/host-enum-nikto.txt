@@ -1,0 +1,19 @@
+- Nikto v2.1.6/2.1.5
++ Target Host: 192.168.0.6
++ Target Port: 8000
++ GET Retrieved x-powered-by header: PHP/7.2.15
++ GET The anti-clickjacking X-Frame-Options header is not present.
++ GET The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ GET The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ GET Entry '/upload.php' in robots.txt returned a non-forbidden or redirect HTTP code (200)
++ GET "robots.txt" contains 2 entries which should be manually viewed.
++ GET Uncommon header 'link' found, with contents: <http://localhost:8000/index.php?rest_route=/>; rel="https://api.w.org/"
++ HEAD Apache/2.4.25 appears to be outdated (current is at least Apache/2.4.37). Apache 2.2.34 is the EOL for the 2.x branch.
++ CHLMSDYM Web Server returns a valid response with junk HTTP methods, this may cause false positives.
++ OSVDB-3233: GET /icons/README: Apache default file found.
++ GET /wp-content/plugins/hello.php: PHP error reveals file system path.
++ OSVDB-62684: GET /wp-content/plugins/hello.php: The WordPress hello.php plugin reveals a file system path
++ GET /wp-links-opml.php: This WordPress script reveals the installed version.
++ OSVDB-3092: GET /license.txt: License file found may identify site software.
++ GET Cookie wordpress_test_cookie created without the httponly flag
++ GET /wp-login.php: Wordpress login found
