@@ -1,0 +1,15 @@
+GET /dashboard.php?id=1 HTTP/1.1
+Host: 192.168.221.10
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:91.0) Gecko/20100101 Firefox/91.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://192.168.221.10/dashboard.php?id=1
+Connection: close
+Cookie: PHPSESSID=t617t2nu2vfsesk6jqc8uc6ic8
+Upgrade-Insecure-Requests: 1
+DNT: 1
+Sec-GPC: 1
+Cache-Control: max-age=0
+
+
