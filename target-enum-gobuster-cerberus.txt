@@ -1,0 +1,21 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://192.168.10.133/gate/cerberus
+[+] Method:                  GET
+[+] Threads:                 95
+[+] Wordlist:                /usr/share/wordlists/dirb/big.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Expanded:                true
+[+] Timeout:                 10s
+===============================================================
+2022/02/23 18:19:59 Starting gobuster in directory enumeration mode
+===============================================================
+http://192.168.10.133/gate/cerberus/.htpasswd            (Status: 403) [Size: 279]
+http://192.168.10.133/gate/cerberus/.htaccess            (Status: 403) [Size: 279]
+http://192.168.10.133/gate/cerberus/tartarus             (Status: 301) [Size: 333] [--> http://192.168.10.133/gate/cerberus/tartarus/]
+===============================================================
+2022/02/23 18:20:06 Finished
+===============================================================
